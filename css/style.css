@@ -205,6 +205,7 @@ table {border-spacing: 0; border-collapse:separate;}
   font-size: 45px;
   padding-bottom: 50px;
 }
+.lab2-list li {text-align:left;}
 
 #labrab3 {
   background-color: #e6dcf2;
@@ -215,6 +216,9 @@ table {border-spacing: 0; border-collapse:separate;}
   font-size: 45px;
   padding-bottom: 50px;
 }
+#labrab3 table {border-right:1px solid #333;border-bottom:1px solid #333;margin: 0 auto;}
+#labrab3 th,
+#labrab3 td {border-left:1px solid #333;border-top:1px solid #333;padding:4px;}
 
 #labrab4 {
   background-color: #fff;
