@@ -12,9 +12,7 @@
   <link href="img/moon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600|Source+Sans+Pro:300,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
 	
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -73,7 +71,7 @@
   </div>
   <!-- /slide1 -->
 
-    <!-- === Slide 1 === -->
+  <!-- === Slide LR1 === -->
   <div class="slide story" id="labrab1" data-slide="2">
     <div class="container">
       <div class="row title-row">
@@ -87,16 +85,12 @@
       <div class="row subtitle-row">
         <div class="col-sm-1 hidden-sm">&nbsp;</div>
         <div class="col-12 col-sm-10 font-regular">
-          <span class="font-black"> 1. Создана личная страница на github</span><br/>
+          <p class="font-black"> 1. Создана личная страница на github</p>
 	  <br/><img src="img/lr11.jpg" /><br/><br/><br/>
           <span class="font-black"> 2. Создана веб-страница-отчет по лабораторным </span><br/>
 	  <br/><img src="img/lr12.jpg" /><br/><br/>
 		 <span class="font-black"> 3. Исходные данные веб-страницы загружены в репозиторий</span><br/>
 	  <br/><img src="img/lr13.jpg" /><br/><br/>
-
-        
-
-
         </div>
         <div class="col-sm-1 hidden-sm">&nbsp;</div>
       </div>
@@ -105,48 +99,13 @@
     <!-- /container -->
   </div>
   <!-- /slide LR1 -->
-  
-      <!-- === Slide LR2 === -->
-  <div class="slide story" id="labrab2" data-slide="3">
+
+  <!-- === Slide LR2 === -->
+  <div class="slide story" id="labrab2" data-slide="2">
     <div class="container">
       <div class="row title-row">
         <div class="col-12 font-light">Лабораторная работа 2</div>
-	        <div class="col-12 font-light">Перевод кода JSON в диаграмму UML Class</div>
-	      
-	     
-
-	      <p><h3>Описание основных задач</h3></p>
-    <span class="font-black"> 1. Требования к программной части проекта: </span><br/>
-	
-	       <p> <li type = "circle">  Проект должен быть реализован в виде одной динамической веб-страницы.</p>
-	     <p> <li type = "circle">  Основные части программного кода должны быть разбиты на подпрограммы - модули.</p>
-	     <p> <li type = "circle">   Каждый модуль должен выполнять только свою часть работы.</p>
-	    <p> <li type = "circle">  Все программируемые части проекта должны быть реализованы на языке программирования JavaScript.</p>
-	   <p> <li type = "circle">   Верстка должна быть написана на HTML/CSS без использования фреймворков.</p>
-	    
-	      <span class="font-black"> 2. Требования к программной части проекта: </span><br/>
-	<span class="font-black"> Основную логику веб-приложения должны осуществлять два модуля:  </span><br/>
-	       <p> <li type = "circle">  Модуль загрузки JSON-файла по ссылке,десериализация его в js-объект, проверка на корректность.</p>
-	     <p> <li type = "circle">  Модуль рисования - рисует в canvas UML Class диаграмму по js-объекту.</p>
-	    
-	     <span class="font-black"> 3. Алгоритм работы программы: </span><br/>
-	    <span class="font-black">Входным параметром является ссылка, ведущая к json-файлу. Программа работает по следующему алгоритму:</span><br/>
-	    <p> <li type = "circle">  Выдать ошибку в случае пустой строки</p>
-	     <p> <li type = "circle">  Выдать ошибку, если не удалось загрузить json по ссылке</p>
-	     <p> <li type = "circle">   Выдать ошибку, если не удалось выполнить восстановление json объекта из последовательности байт</p>
-	    <p> <li type = "circle">  Выдать ошибку, если json является неполным</p>
-	   <p> <li type = "circle">   Отрисовать uml-class диаграмму</p>
-	     <br/><img src="img/alg.jpg" /><br/><br/>
-	    
-	      <span class="font-black"> 3. Дизайн: </span><br/>
-	     <p> <li type = "circle">  Веб-приложение будет состоять из одной страницы с динамической подгрузкой конента для визуализации UML-диаграмм. Изначально на странице будет расположен input для ввода ссылки на JSON-файл, а также кнопка, запускающая процесс визуализации.</p>
-	    <br/><img src="img/d1.jpg" /><br/><br/>
-	    <p> <li type = "circle">  После нажатия на кнопку чуть ниже всех элементов будет располагаться Canvas-элемент на котором будет обрисовывается UML Class диаграмма.</p>
-	    <br/><img src="img/d2.jpg" /><br/><br/>
-	    
-	<hr>	
-	
-
+        <div class="col-12 font-light">Перевод кода JSON в диаграмму UML Class</div>
       </div>
       <!-- /row -->
       <div class="row line-row">
@@ -156,11 +115,42 @@
       <div class="row subtitle-row">
         <div class="col-sm-1 hidden-sm">&nbsp;</div>
         <div class="col-12 col-sm-10 font-regular">
-
- <span class="font-black"><hr>
-	
-
-
+           <h3>Описание основных задач</h3>
+           <p class="font-black">1. Требования к программной части проекта: </p>
+           <ul class="lab2-list">
+             <li>Проект должен быть реализован в виде одной динамической веб-страницы.</li>
+             <li>Основные части программного кода должны быть разбиты на подпрограммы - модули.</li>
+             <li>Каждый модуль должен выполнять только свою часть работы.</li>
+             <li>Все программируемые части проекта должны быть реализованы на языке программирования JavaScript.</li>
+             <li>Верстка должна быть написана на HTML/CSS без использования фреймворков.</li>
+           </ul>
+           <p>&nbsp;</p>
+           <p class="font-black">Основную логику веб-приложения должны осуществлять два модуля:<br/>
+           <ul class="lab2-list">
+             <li>Модуль загрузки JSON-файла по ссылке,десериализация его в js-объект, проверка на корректность.</li>
+             <li>Модуль рисования - рисует в canvas UML Class диаграмму по js-объекту.</li>
+           </ul>
+           <p>&nbsp;</p>
+           <p class="font-black">2. Алгоритм работы программы:  </p>
+           <p class="font-black">Входным параметром является ссылка, ведущая к json-файлу. Программа работает по следующему алгоритму:</p>
+           <ul class="lab2-list">
+             <li>Выдать ошибку в случае пустой строки</li>
+             <li>Выдать ошибку, если не удалось загрузить json по ссылке</li>
+             <li>Выдать ошибку, если не удалось выполнить восстановление json объекта из последовательности байт</li>
+             <li>Выдать ошибку, если json является неполным</li>
+             <li>Отрисовать uml-class диаграмму
+                 <br/><img src="img/alg.jpg" /><br/>
+             </li>
+           </ul>
+           <p>&nbsp;</p>
+           <p class="font-black">3. Дизайн:  </p>
+           <ul class="lab2-list">
+             <li>Веб-приложение будет состоять из одной страницы с динамической подгрузкой конента для визуализации UML-диаграмм. Изначально на странице будет расположен input для ввода ссылки на JSON-файл, а также кнопка, запускающая процесс визуализации.</li>
+             <li>После нажатия на кнопку чуть ниже всех элементов будет располагаться Canvas-элемент на котором будет обрисовывается UML Class диаграмма.
+                 <img src="img/d1.jpg" /><br/><br/>
+                 <img src="img/d2.jpg" /><br/><br/>
+             </li>
+           </ul>
         </div>
         <div class="col-sm-1 hidden-sm">&nbsp;</div>
       </div>
@@ -169,138 +159,13 @@
     <!-- /container -->
   </div>
   <!-- /slide LR2 -->
-  
+
 <!-- === Slide LR3 === -->
   <div class="slide story" id="labrab3" data-slide="4">
     <div class="container">
       <div class="row title-row">
         <div class="col-12 font-light">Лабораторная работа 3</div>
-	      </div>
-	      <hr>
-
-                  <p>Расчет диапазонов подсетей.</p>
-                  <table>
-                    <tr>
-                      <th>-</th>
-                      <th>Lan A</th>
-                      <th>Lan B</th>
-                      <th>Lan C</th>
-                      <tr>
-                        <th>Кол-во узлов</th>
-                        <td>12</td>
-                        <td>457</td>
-                        <td>78</td>
-                      </tr>
-                      <tr>
-                        <th>Subnet</th>
-                        <td>192.168.3.0</td>
-                        <td>172.16.3.0</td>
-                        <td>10.10.3.0</td>
-                      </tr>
-                      <tr>
-                        <th>Mask</th>
-                        <td>255.255.255.240</td>
-                        <td>255.255.254.0</td>
-                        <td>255.255.255.128</td>
-                      </tr>
-                      <tr>
-                        <th>Broadcast</th>
-                        <td>192.168.3.15</td>
-                        <td>172.16.4.255</td>
-                        <td>10.10.3.127</td>
-                      </tr>
-                    </tr>
-                  </table>
-                  <br>
-                  <ol>
-			   <span class="font-black"> 1. Разместить на рабочем поле коммутатор и два компьютера и соединить их</span><br/>
-	  <br/><img src="img/scr1.png" /><br/><br/><br/>
-          <span class="font-black"> 2. Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети </span><br/>
-	  <br/><img src="img/scr2.png" /><br/><br/>
-		 <span class="font-black"> 3. Соединить коммутаторы между собой и проверить работоспособность сети (Не работает, так как коммутаторы подсоединяются только к маршрутизаторам)</span><br/>
-	  <br/><img src="img/scr3.png" /><br/><br/>
-			  <span class="font-black"> 4. Добавить маршрутизатор на рабочее поле</span><br/>
-	  <br/><img src="img/scr4.png" /><br/><br/>
-			  <span class="font-black"> 5. Добавить на рабочее поле еще один маршрутизатор, подключить к нему коммутатор и компьютер</span><br/>
-	  <br/><img src="img/scr5.png" /><br/><br/>
-                  
-                  </ol>
-                  <br>
-                  <table>
-                    <tr>
-                      <th>Устройство</th>
-                      <th>IP - адрес</th>
-                      <th>Маска</th>
-                      <th>Шлюз</th>
-                      <tr>
-                        <td>PC0</td>
-                        <td>192.168.3.14  </td>
-                        <td>255.255.255.240</td>
-                        <td>192.168.3.1</td>
-                      </tr>
-                      <tr>
-                        <td>PC1</td>
-                        <td>192.168.3.13</td>
-                        <td>255.255.255.240</td>
-                        <td>192.168.3.1</td>
-                      </tr>
-                      <tr>
-                        <td>PC2</td>
-                        <td>172.16.4.254</td>
-                        <td>255.255.254.0</td>
-                        <td>172.16.3.1</td>
-                      </tr>
-                      <tr>
-                        <td>PC3</td>
-                        <td>172.16.4.253</td>
-                        <td>255.255.254.0</td>
-                        <td>172.16.3.1</td>
-                      </tr>
-                      <tr>
-                        <td>PC4</td>
-                        <td>10.10.3.126</td>
-                        <td>255.255.255.128</td>
-                        <td>10.10.3.1</td>
-                      </tr>
-                      <tr>
-                        <td>R0 0/0</td>
-                        <td>192.168.3.1</td>
-                        <td>255.255.255.240</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td>R0 0/1</td>
-                        <td>172.16.3.1</td>
-                        <td>255.255.254.0</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td>R0 0/2</td>
-                        <td>15.15.3.2</td>
-                        <td>255.255.255.252</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td>R1 0/1</td>
-                        <td>10.10.3.1</td>
-                        <td>255.255.255.128</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td>R1 0/2</td>
-                        <td>15.15.3.1</td>
-                        <td>255.255.255.252</td>
-                        <td>-</td>
-                      </tr>
-                    </tr>
-                  </table>
-                  <br>
-                  <p>Настройка статической маршрутизации производится при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
-                  <p>Установить банер на сетевое оборудование: banner motd [баннер]</p>
-
-                   <span class="font-black"> 6. Проверка работоспособности сети</span><br/>
-	  <br/><img src="img/scr6.png" /><br/><br/>
-	  
+      </div>
       <!-- /row -->
       <div class="row line-row">
         <div class="hr">&nbsp;</div>
@@ -309,9 +174,135 @@
       <div class="row subtitle-row">
         <div class="col-sm-1 hidden-sm">&nbsp;</div>
         <div class="col-12 col-sm-10 font-regular">
-          <span class="font-black">  
+           <p class="font-black">Расчет диапазонов подсетей.</p>
+           <div>
+           <table>
+              <tr>
+                <th>-</th>
+                <th>Lan A</th>
+                <th>Lan B</th>
+                <th>Lan C</th>
+              </tr>
+              <tr>
+                <th>Кол-во узлов</th>
+                <td>12</td>
+                <td>457</td>
+                <td>78</td>
+              </tr>
+              <tr>
+                <th>Subnet</th>
+                <td>192.168.3.0</td>
+                <td>172.16.3.0</td>
+                <td>10.10.3.0</td>
+              </tr>
+              <tr>
+                <th>Mask</th>
+                <td>255.255.255.240</td>
+                <td>255.255.254.0</td>
+                <td>255.255.255.128</td>
+              </tr>
+              <tr>
+                <th>Broadcast</th>
+                <td>192.168.3.15</td>
+                <td>172.16.4.255</td>
+                <td>10.10.3.127</td>
+              </tr>
+              </table>
+              </div>
+              <p>&nbsp;</p>
+              <ol>
+                <li>Разместить на рабочем поле коммутатор и два компьютера и соединить их
+                    <br/><img src="img/scr1.png" /><br/>
+                </li>
+                <li>Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети<br/>
+                    <br/><img src="img/scr2.png" /><br/><br/>
+                </li>
+                <li>Соединить коммутаторы между собой и проверить работоспособность сети (Не работает, так как коммутаторы подсоединяются только к маршрутизаторам)<br/>
+                    <img src="img/scr3.png" /><br/><br/>
+                </li>
+                <li>Добавить маршрутизатор на рабочее поле<br/>
+                    <img src="img/scr4.png" /><br/><br/>
+                </li>
+                <li>Добавить на рабочее поле еще один маршрутизатор, подключить к нему коммутатор и компьютер<br/>
+                    <img src="img/scr5.png" /><br/><br/>
+                <p>&nbsp;</p>
+                <table>
+                  <tr>
+                    <th>Устройство</th>
+                    <th>IP - адрес</th>
+                    <th>Маска</th>
+                    <th>Шлюз</th>
+                  </tr>
+                  <tr>
+                    <td>PC0</td>
+                    <td>192.168.3.14  </td>
+                    <td>255.255.255.240</td>
+                    <td>192.168.3.1</td>
+                  </tr>
+                  <tr>
+                    <td>PC1</td>
+                    <td>192.168.3.13</td>
+                    <td>255.255.255.240</td>
+                    <td>192.168.3.1</td>
+                  </tr>
+                  <tr>
+                    <td>PC2</td>
+                    <td>172.16.4.254</td>
+                    <td>255.255.254.0</td>
+                    <td>172.16.3.1</td>
+                  </tr>
+                  <tr>
+                    <td>PC3</td>
+                    <td>172.16.4.253</td>
+                    <td>255.255.254.0</td>
+                    <td>172.16.3.1</td>
+                  </tr>
+                  <tr>
+                    <td>PC4</td>
+                    <td>10.10.3.126</td>
+                    <td>255.255.255.128</td>
+                    <td>10.10.3.1</td>
+                  </tr>
+                  <tr>
+                    <td>R0 0/0</td>
+                    <td>192.168.3.1</td>
+                    <td>255.255.255.240</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                     <td>R0 0/1</td>
+                    <td>172.16.3.1</td>
+                    <td>255.255.254.0</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>R0 0/2</td>
+                    <td>15.15.3.2</td>
+                    <td>255.255.255.252</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>R1 0/1</td>
+                    <td>10.10.3.1</td>
+                    <td>255.255.255.128</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>R1 0/2</td>
+                    <td>15.15.3.1</td>
+                    <td>255.255.255.252</td>
+                    <td>-</td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+                <p>Настройка статической маршрутизации производится при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
+                <p>Установить банер на сетевое оборудование: banner motd [баннер]</p>
+                </li>
+                <li>6. Проверка работоспособности сети
+                    <br/><img src="img/scr6.png" /><br/><br/>
+                </li>
+              </ol>
         </div>
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
       </div>
       <!-- /row -->
     </div>
