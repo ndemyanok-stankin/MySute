@@ -32,7 +32,10 @@ function clock(){
  hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),
  minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes(),
  seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
- document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds;
+	numr = date.getDate();
+	mont = date.getMonth();
+	ye = date.getFullYear();
+ document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + numr + ' ' + mont + ' ' + ye;
 }
 setInterval(clock, 1000);
 clock();
