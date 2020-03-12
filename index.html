@@ -33,7 +33,7 @@ function clock(){
  minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes(),
  seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
 	numr = date.getDate();
-	mont = date.getMonth();
+	mont = date.getMonth() + 1;
 	ye = date.getFullYear();
  document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + numr + ' ' + mont + ' ' + ye;
 }
