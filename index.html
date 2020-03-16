@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Отчёт о выполнении лабораторных работ Архипов С.С.</title>
+  <title>Отчёт о выполнении лабораторных работ Демьянок Никита</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -26,19 +26,26 @@
 
   <link rel="prefetch" href="img/zoom.png">
 	
-<script>	
-function clock(){
- var date = new Date(),
- hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),
- minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes(),
- seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
-	numr = date.getDate();
-	mont = date.getMonth() + 1;
-	ye = date.getFullYear();
- document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + numr + '-' + mont + '-' + ye;
+<script type="text/javascript">
+function startTime()
+{
+var tm=new Date();
+var h=tm.getHours();
+var m=tm.getMinutes();
+var s=tm.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
 }
-setInterval(clock, 1000);
-clock();
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
 </script>
 </head>
 
@@ -230,8 +237,8 @@ clock();
       <div class="row title-row">
         <div class="col-12 font-light">Лабораторная работа 3</div>
       </div>
-	    <p>В данной лабораторной работе был добавлен скрипт отображения текущих даты и времени</p>
-	    <div id="clock"></div>
+	    <p>В данной лабораторной работе были добавлены часы</p>
+	    <div id="StartTime"></div>
     </div>
     <!-- /container -->
   </div>
@@ -243,7 +250,7 @@ clock();
       <div class="row title-row">
         <div class="col-12 font-light">Лабораторная работа 4</div>
       </div>
-	    <p>На данной странице используется следующий <a href = "https://github.com/S-Arkhipov/StudPageNew/blob/master/css/style.css">CSS-файл</a></p> </p>
+	    <p>На данной странице используется следующий <a href = "/css/style.css">CSS-файл</a></p> </p>
 	    <div id="clock"></div>
     </div>
     <!-- /container -->
